@@ -9,11 +9,11 @@ class CreateAcc:
 
 	def random(self):
 		rand = list("abcdefghijklmnopqrstuvwxyz1234567890")
-		acak = [random.choice(rand) for _ in range(10)]
+		acak = [random.choice(rand) for _ in range(3)]
 		return "".join(acak)
 
 	def create(self):
-		randomMail = self.random()+"@tole.com"
+		randomMail = "lentera"+self.random()+"@yopmail.com"
 		self.data = {
 			"iagree":"true", "birth_day":self.date[0],
 			"platform":"Android-ARM", "creation_point":"client_mobile",
